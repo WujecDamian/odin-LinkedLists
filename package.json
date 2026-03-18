@@ -4,7 +4,8 @@
   "description": "Basic template of webpack perfect for simple projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,14 @@
   },
   "homepage": "https://github.com/WujecDamian/webpack-template#readme",
   "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "css-loader": "^7.1.4",
     "eslint": "^10.0.2",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.3.0",
     "prettier": "^3.8.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.3",
