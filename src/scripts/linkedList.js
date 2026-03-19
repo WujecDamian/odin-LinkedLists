@@ -47,9 +47,33 @@ export function linkedList () {
       }
       return current.value
     },
-    at (index) {},
+    at (index) {
+      let i=0
+
+      let current=this.head
+      if(index>this.size()){
+        return `[ There is no Index - ${index} in list ]`
+      }
+      while(current.nextNode!=null && i<index){
+        i++
+        current=current.nextNode
+      }
+
+      return current.value
+    },
     pop () {},
-    contains (value) {},
+    contains (value) {
+      let current=this.head
+
+      while(current.nextNode!=null){
+        if(current.value===value){
+          return true
+        }
+        current=current.nextNode
+
+      }
+      return false
+    },
     findIndex (value) {},
     toString () {
       let result=''
