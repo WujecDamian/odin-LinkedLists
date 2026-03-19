@@ -24,7 +24,11 @@ export function linkedList () {
     prepend (value) {},
     size () {
       let size=0
-
+      if(this.head===null){
+        return size
+      }else{
+        size=1
+      }
       let current=this.head
       while(current.nextNode!=null){
         current=current.nextNode
@@ -36,7 +40,13 @@ export function linkedList () {
       let current=this.head
       return current.value
     },
-    tail () {},
+    tail () {
+      let current=this.head
+      while(current.nextNode!=null){
+        current=current.nextNode
+      }
+      return current.value
+    },
     at (index) {},
     pop () {},
     contains (value) {},
@@ -47,6 +57,7 @@ export function linkedList () {
         return
       }
       let current=this.head
+      result+=`( ${current.value} ) -> `
       while(current.nextNode!==null){
         current=current.nextNode
         result+=`( ${current.value} ) -> `

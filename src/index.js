@@ -15,4 +15,6 @@ list.append('turtle')
 console.log(list.toString())
 console.log(`size ${list.size()}`)
 console.log(`head ${list.printHead()}`)
+console.log(`tail ${list.tail()}`)
+
  
