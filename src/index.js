@@ -10,8 +10,9 @@ list.append('cat')
 list.append('parrot')
 list.append('hamster')
 list.append('snake')
-list.append('turtle')
+list.append('turtle') 
 
 console.log(list.toString())
 console.log(`size ${list.size()}`)
 console.log(`head ${list.printHead()}`)
+ 
