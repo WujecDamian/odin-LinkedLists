@@ -32,7 +32,10 @@ export function linkedList () {
       }
       return size
     },
-    printHead () {},
+    printHead () {
+      let current=this.head
+      return current.value
+    },
     tail () {},
     at (index) {},
     pop () {},
