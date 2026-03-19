@@ -21,7 +21,11 @@ export function linkedList () {
 
 
     },
-    prepend (value) {},
+    prepend (value) {
+      let newnode=Node(value)
+      newnode.nextNode=this.head
+      this.head=newnode     
+    },
     size () {
       let size=0
       if(this.head===null){
@@ -74,7 +78,19 @@ export function linkedList () {
       }
       return false
     },
-    findIndex (value) {},
+    findIndex (value) {
+      let current=this.head
+      let index=0
+      while(current.nextNode!=null){
+        index++
+        if(current.value===value){
+          return index
+        }
+        current=current.nextNode
+
+      }
+      return -1
+    },
     toString () {
       let result=''
        if(this.head===null){
