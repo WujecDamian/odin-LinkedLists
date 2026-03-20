@@ -65,7 +65,11 @@ export function linkedList () {
 
       return current.value
     },
-    pop () {},
+    pop () {
+      let current=this.head
+      current=current.nextNode
+      this.head=current
+    },
     contains (value) {
       let current=this.head
 
