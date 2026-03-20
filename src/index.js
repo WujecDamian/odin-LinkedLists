@@ -10,7 +10,6 @@ list.append('cat')
 list.append('parrot')
 list.append('hamster')
 list.pop()
-
 list.prepend('duck (prepend)')
 list.append('snake')
 list.append('turtle') 
